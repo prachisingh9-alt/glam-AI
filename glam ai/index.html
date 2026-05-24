@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GLAM AI — AI Photo & Video Studio</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=Bebas+Neue&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- Custom cursor -->
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- NAV -->
+<nav>
+  <a href="#" class="nav-logo">GLAM</a>
+  <ul class="nav-links">
+    <li><a href="#features">Features</a></li>
+    <li><a href="#editor">Studio</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#pricing">Pricing</a></li>
+    <li><a href="#" class="nav-cta">Try Free</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-bg"></div>
+  <div class="hero-content">
+    <div class="hero-tag">✦ Powered by Generative AI</div>
+    <h1 class="hero-title">
+      Your Face,
+      <em>Reimagined.</em>
+      Beautifully.
+    </h1>
+    <p class="hero-sub">Professional-grade AI photo & video editing in seconds. One-tap beauty, background magic, and viral content creation — all in your pocket.</p>
+    <div class="hero-actions">
+      <a href="#editor" class="btn-primary">Open Studio ↗</a>
+      <a href="#features" class="btn-ghost">Explore Features</a>
+    </div>
+  </div>
+
+  <div class="hero-visual">
+    <div style="position: relative;">
+      <div class="phone-mockup">
+        <div class="phone-notch"></div>
+        <div class="phone-screen">
+          <div class="phone-editor-ui">
+            <div class="phone-img-area">
+              <div class="ai-glow"></div>
+            </div>
+            <div class="phone-filter-bar">
+              <div class="filter-chip active">Glam</div>
+              <div class="filter-chip">Beauty</div>
+              <div class="filter-chip">Cinematic</div>
+              <div class="filter-chip">BW</div>
+            </div>
+            <div class="phone-bottom-tools">
+              <div class="phone-tool-icon">✂</div>
+              <div class="phone-tool-icon">✦</div>
+              <div class="phone-tool-icon">◎</div>
+              <div class="phone-tool-icon">↗</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="float-badge badge-1">
+        <span class="badge-icon">✨</span>
+        <div>
+          <div class="badge-value">AI Beauty</div>
+          <div class="badge-label">Skin retouching active</div>
+        </div>
+      </div>
+      <div class="float-badge badge-2">
+        <span class="badge-icon">🎬</span>
+        <div>
+          <div class="badge-value">4K Export</div>
+          <div class="badge-label">Ready in 2 seconds</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS BAR -->
+<div class="stats-bar reveal">
+  <div class="stat-item">
+    <div class="stat-num" data-count="50">0</div>
+    <div class="stat-label">Million+ Users</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-num" data-count="200">0</div>
+    <div class="stat-label">AI Filters & Effects</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-num" data-count="4.8">0</div>
+    <div class="stat-label">App Store Rating</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-num" data-count="1">0</div>
+    <div class="stat-label">Billion Edits Made</div>
+  </div>
+</div>
+
+<!-- FEATURES -->
+<section class="section reveal" id="features">
+  <div class="section-tag">— What We Do</div>
+  <h2 class="section-title">AI Tools That Feel <em>Like Magic</em></h2>
+  <p class="section-sub">Every feature is designed to produce results that look professionally edited, in a fraction of the time.</p>
+
+  <div class="features-grid">
+    <div class="feature-card" style="--accent-color: rgba(212,168,83,0.1);">
+      <div class="feature-num">01</div>
+      <div class="feature-icon" style="background: rgba(212,168,83,0.12);">✨</div>
+      <div class="feature-name">AI Beauty Filter</div>
+      <p class="feature-desc">One-tap skin retouching, blemish removal, and subtle makeup enhancement. Looks natural, never plastic.</p>
+    </div>
+    <div class="feature-card" style="--accent-color: rgba(232,130,154,0.1);">
+      <div class="feature-num">02</div>
+      <div class="feature-icon" style="background: rgba(232,130,154,0.12);">🌅</div>
+      <div class="feature-name">Background Swap</div>
+      <p class="feature-desc">AI-powered background removal and replacement. Studio-quality cutouts with intelligent edge detection.</p>
+    </div>
+    <div class="feature-card" style="--accent-color: rgba(78,205,196,0.08);">
+      <div class="feature-num">03</div>
+      <div class="feature-icon" style="background: rgba(78,205,196,0.12);">🎬</div>
+      <div class="feature-name">Video Effects</div>
+      <p class="feature-desc">Cinematic color grading, slow-motion, and layered effect stacks for short-form content creation.</p>
+    </div>
+    <div class="feature-card" style="--accent-color: rgba(155,109,255,0.1);">
+      <div class="feature-num">04</div>
+      <div class="feature-icon" style="background: rgba(155,109,255,0.12);">🪄</div>
+      <div class="feature-name">Object Removal</div>
+      <p class="feature-desc">Generative AI fills the gap seamlessly after removing unwanted objects. No clone stamp needed.</p>
+    </div>
+    <div class="feature-card" style="--accent-color: rgba(212,168,83,0.08);">
+      <div class="feature-num">05</div>
+      <div class="feature-icon" style="background: rgba(240,201,122,0.12);">📱</div>
+      <div class="feature-name">Story & Reel Export</div>
+      <p class="feature-desc">Format-perfect exports for Instagram, TikTok, and YouTube Shorts. One-tap aspect ratio switching.</p>
+    </div>
+    <div class="feature-card" style="--accent-color: rgba(232,130,154,0.08);">
+      <div class="feature-num">06</div>
+      <div class="feature-icon" style="background: rgba(232,130,154,0.10);">🕒</div>
+      <div class="feature-name">Edit History</div>
+      <p class="feature-desc">Non-destructive editing with full history. Revisit any step, compare before/after, revert instantly.</p>
+    </div>
+  </div>
+</section>
+
+<!-- INTERACTIVE EDITOR -->
+<section class="editor-section reveal" id="editor">
+  <div class="section-tag">— Live Studio</div>
+  <h2 class="section-title">Try the AI <em>Editor Now</em></h2>
+  <p class="section-sub">Upload your photo and experience real-time AI enhancement. No signup needed.</p>
+
+  <div class="editor-demo">
+    <div class="editor-canvas" id="editorCanvas">
+      <div class="canvas-glow"></div>
+      <div class="upload-zone" id="uploadZone">
+        <span style="font-size:40px;">📸</span>
+        <p>Drop a photo here or <strong id="uploadTrigger">browse files</strong></p>
+        <p style="font-size:11px; opacity:0.5;">JPG, PNG, WEBP — up to 10MB</p>
+      </div>
+      <div class="editor-result" id="editorResult">
+        <div class="ai-processing-overlay" id="processingOverlay">
+          <div class="ai-spinner"></div>
+          <p id="processingText">APPLYING AI ENHANCEMENT...</p>
+        </div>
+        <img id="previewImg" src="" alt="Preview" style="max-width:100%;max-height:420px;border-radius:8px;display:block;transition:filter 0.5s,transform 0.5s;" />
+      </div>
+      <input type="file" id="fileInput" accept="image/*" style="display:none;">
+    </div>
+
+    <div class="editor-sidebar">
+      <div class="sidebar-tabs">
+        <button class="sidebar-tab active" onclick="switchTab('filters',this)">Filters</button>
+        <button class="sidebar-tab" onclick="switchTab('adjust',this)">Adjust</button>
+        <button class="sidebar-tab" onclick="switchTab('beauty',this)">Beauty</button>
+      </div>
+
+      <!-- FILTERS TAB -->
+      <div class="tab-content active" id="tab-filters">
+        <div>
+          <div class="sidebar-section-label">AI Presets</div>
+          <div class="filter-row">
+            <button class="filter-pill active" onclick="applyFilter(this,'natural')">Natural</button>
+            <button class="filter-pill" onclick="applyFilter(this,'glamour')">Glamour</button>
+            <button class="filter-pill" onclick="applyFilter(this,'vintage')">Vintage</button>
+            <button class="filter-pill" onclick="applyFilter(this,'cinematic')">Cinematic</button>
+            <button class="filter-pill" onclick="applyFilter(this,'glow')">Glow</button>
+            <button class="filter-pill" onclick="applyFilter(this,'bw')">B&W</button>
+          </div>
+        </div>
+        <div>
+          <div class="sidebar-section-label">Intensity</div>
+          <div class="slider-row">
+            <div class="slider-header">
+              <span class="slider-name">Filter Strength</span>
+              <span class="slider-value" id="filterStrengthVal">80%</span>
+            </div>
+            <input type="range" min="0" max="100" value="80" oninput="document.getElementById('filterStrengthVal').textContent=this.value+'%'">
+          </div>
+        </div>
+        <button class="apply-btn" onclick="applyAI()">
+          <span>✦</span> Apply AI Enhancement
+        </button>
+      </div>
+
+      <!-- ADJUST TAB -->
+      <div class="tab-content" id="tab-adjust">
+        <div class="slider-group">
+          <div class="slider-row">
+            <div class="slider-header">
+              <span class="slider-name">Brightness</span>
+              <span class="slider-value" id="bVal">50</span>
+            </div>
+            <input type="range" min="0" max="100" value="50" oninput="updateAdjust(this,'brightness','bVal')">
+          </div>
+          <div class="slider-row">
+            <div class="slider-header">
+              <span class="slider-name">Contrast</span>
+              <span class="slider-value" id="cVal">50</span>
+            </div>
+            <input type="range" min="0" max="100" value="50" oninput="updateAdjust(this,'contrast','cVal')">
+          </div>
+          <div class="slider-row">
+            <div class="slider-header">
+              <span class="slider-name">Saturation</span>
+              <span class="slider-value" id="sVal">50</span>
+            </div>
+            <input type="range" min="0" max="100" value="50" oninput="updateAdjust(this,'saturation','sVal')">
+          </div>
+          <div class="slider-row">
+            <div class="slider-header">
+              <span class="slider-name">Sharpness</span>
+              <span class="slider-value" id="shVal">30</span>
+            </div>
+            <input type="range" min="0" max="100" value="30" oninput="document.getElementById('shVal').textContent=this.value">
+          </div>
+          <div class="slider-row">
+            <div class="slider-header">
+              <span class="slider-name">Warmth</span>
+              <span class="slider-value" id="wVal">50</span>
+            </div>
+            <input type="range" min="0" max="100" value="50" oninput="document.getElementById('wVal').textContent=this.value">
+          </div>
+          <div class="slider-row">
+            <div class="slider-header">
+              <span class="slider-name">Vignette</span>
+              <span class="slider-value" id="vVal">0</span>
+            </div>
+            <input type="range" min="0" max="100" value="0" oninput="updateVignette(this)">
+          </div>
+        </div>
+        <button class="apply-btn" onclick="applyAI()"><span>✓</span> Apply Adjustments</button>
+      </div>
+
+      <!-- BEAUTY TAB -->
+      <div class="tab-content" id="tab-beauty">
+        <div>
+          <div class="sidebar-section-label">Beauty Tools</div>
+          <div class="beauty-grid">
+            <button class="beauty-btn" onclick="toggleBeauty(this)">
+              <span class="bb-icon">✨</span>
+              <span class="bb-label">Smooth</span>
+            </button>
+            <button class="beauty-btn" onclick="toggleBeauty(this)">
+              <span class="bb-icon">💧</span>
+              <span class="bb-label">Dewey</span>
+            </button>
+            <button class="beauty-btn" onclick="toggleBeauty(this)">
+              <span class="bb-icon">💄</span>
+              <span class="bb-label">Makeup</span>
+            </button>
+            <button class="beauty-btn" onclick="toggleBeauty(this)">
+              <span class="bb-icon">👁</span>
+              <span class="bb-label">Eyes</span>
+            </button>
+            <button class="beauty-btn" onclick="toggleBeauty(this)">
+              <span class="bb-icon">🌟</span>
+              <span class="bb-label">Glow</span>
+            </button>
+            <button class="beauty-btn" onclick="toggleBeauty(this)">
+              <span class="bb-icon">🪄</span>
+              <span class="bb-label">Slim</span>
+            </button>
+          </div>
+        </div>
+        <div class="slider-row">
+          <div class="slider-header">
+            <span class="slider-name">Skin Retouching</span>
+            <span class="slider-value" id="skinVal">60%</span>
+          </div>
+          <input type="range" min="0" max="100" value="60" oninput="document.getElementById('skinVal').textContent=this.value+'%'">
+        </div>
+        <button class="apply-btn" onclick="applyAI()"><span>✦</span> Apply Beauty AI</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY SHOWCASE -->
+<section class="showcase reveal" id="gallery">
+  <div class="section-tag">— Gallery</div>
+  <h2 class="section-title">Made With <em>GLAM AI</em></h2>
+  <p class="section-sub">Thousands of creators share their work daily. Here's a glimpse of what's possible.</p>
+  <div style="overflow:hidden; margin: 0 -48px;">
+    <div class="showcase-marquee" id="marquee"></div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section class="pricing reveal" id="pricing">
+  <div class="section-tag">— Plans</div>
+  <h2 class="section-title">Simple, Transparent <em>Pricing</em></h2>
+  <p class="section-sub">Start free, upgrade when you're ready. No surprise charges.</p>
+
+  <div class="pricing-grid">
+    <div class="pricing-card">
+      <div class="pricing-name">Free</div>
+      <div class="pricing-price"><span>$</span>0</div>
+      <div class="pricing-period">Forever free</div>
+      <ul class="pricing-features">
+        <li>10 AI edits per day</li>
+        <li>Basic filters & adjustments</li>
+        <li>720p export</li>
+        <li>Standard support</li>
+        <li class="disabled">Background removal</li>
+        <li class="disabled">Video editing</li>
+        <li class="disabled">No watermark</li>
+      </ul>
+      <a href="#" class="btn-ghost" style="display:block;text-align:center;font-size:13px;">Get Started Free</a>
+    </div>
+    <div class="pricing-card featured">
+      <div class="pricing-featured-badge">Most Popular</div>
+      <div class="pricing-name">Pro</div>
+      <div class="pricing-price"><span>$</span>9<span style="font-family:'DM Sans';font-size:20px;vertical-align:baseline">.99</span></div>
+      <div class="pricing-period">per month, billed monthly</div>
+      <ul class="pricing-features">
+        <li>Unlimited AI edits</li>
+        <li>All filters & presets</li>
+        <li>4K export</li>
+        <li>Background removal</li>
+        <li>Video editing & effects</li>
+        <li>No watermark</li>
+        <li class="disabled">Commercial license</li>
+      </ul>
+      <a href="#" class="btn-primary" style="display:block;text-align:center;font-size:13px;">Start Pro Trial</a>
+    </div>
+    <div class="pricing-card">
+      <div class="pricing-name">Creator</div>
+      <div class="pricing-price"><span>$</span>24</div>
+      <div class="pricing-period">per month, billed annually</div>
+      <ul class="pricing-features">
+        <li>Everything in Pro</li>
+        <li>Commercial license</li>
+        <li>API access</li>
+        <li>Priority rendering</li>
+        <li>Team collaboration</li>
+        <li>Dedicated support</li>
+        <li>White-label exports</li>
+      </ul>
+      <a href="#" class="btn-ghost" style="display:block;text-align:center;font-size:13px;">Contact Sales</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-brand">
+    <a href="#" class="nav-logo">GLAM</a>
+    <p>The AI-powered creative studio for photos and videos. Look stunning, effortlessly.</p>
+  </div>
+  <div class="footer-col">
+    <h4>Product</h4>
+    <ul>
+      <li><a href="#">Features</a></li>
+      <li><a href="#">Studio</a></li>
+      <li><a href="#">Gallery</a></li>
+      <li><a href="#">API</a></li>
+    </ul>
+  </div>
+  <div class="footer-col">
+    <h4>Company</h4>
+    <ul>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="#">Careers</a></li>
+      <li><a href="#">Press</a></li>
+    </ul>
+  </div>
+  <div class="footer-col">
+    <h4>Legal</h4>
+    <ul>
+      <li><a href="#">Privacy</a></li>
+      <li><a href="#">Terms</a></li>
+      <li><a href="#">Cookies</a></li>
+      <li><a href="#">Licenses</a></li>
+    </ul>
+  </div>
+</footer>
+<div class="footer-bottom">
+  <p>© 2025 Glam AI Studio. All rights reserved.</p>
+  <p>✦ Built with Generative AI</p>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
